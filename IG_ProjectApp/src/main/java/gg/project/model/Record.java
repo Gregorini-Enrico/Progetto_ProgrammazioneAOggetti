@@ -11,4 +11,21 @@ public class Record {
 		Hashtag=null;
 		data=null;
 	}
+
+	public ArrayList<String> getHashtag() {
+		return Hashtag;
+	}
+
+	public void setHashtag(ArrayList<String> hashtag) {
+		Hashtag = hashtag;
+	}
+
+	public Date getData() {
+		return data;
+	}
+
+	public void setData(Date data) {
+		this.data = data;
+	}
+	
 }
