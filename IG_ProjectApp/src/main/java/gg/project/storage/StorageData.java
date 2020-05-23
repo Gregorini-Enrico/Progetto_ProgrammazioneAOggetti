@@ -27,6 +27,10 @@ public class StorageData {
 			
 			try {
 				BufferedReader buff = new BufferedReader(new InputStreamReader(in));
+				while ( ( line = buff.readLine() ) != null ) {
+					data+= line;
+				}
+				System.out.print(data);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
