@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import gg.project.service.PrincipalService;
 import gg.project.service.UrlService;
 import gg.project.storage.StorageData;
@@ -24,5 +23,4 @@ public class IGController {
 	{
 		return new ResponseEntity<>(service.getFollower(UrlService.getUrl(token)), HttpStatus.OK);
 	}
-			                                
-}
+}		                                

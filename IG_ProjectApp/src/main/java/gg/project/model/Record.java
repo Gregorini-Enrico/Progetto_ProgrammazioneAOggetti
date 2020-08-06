@@ -25,7 +25,6 @@ public class Record {
 	}
 
 	public void setData(String data) {
-		this.data = data;
+		this.data=data;
 	}
-	
 }
