@@ -28,7 +28,6 @@ import gg.project.model.Record;
 public class StorageData {
     
     public static List<Record> Storing(String url) throws ParseException {
-    	//List<Record> dati;
     	Parser p = new Parser();
 		try {
 			URLConnection openConnection = new URL(url).openConnection();
@@ -53,13 +52,10 @@ public class StorageData {
 			ObjectMapper obj = new ObjectMapper();
 			p = obj.readValue(data, Parser.class);
 		
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Errore I/O");
 		}
+		
 		return Data.getData(p);
     }
     
