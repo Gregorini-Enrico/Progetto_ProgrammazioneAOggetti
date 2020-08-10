@@ -26,10 +26,9 @@ import gg.project.model.Data;
 import gg.project.model.Record;
 
 public class StorageData {
-	private ArrayList<Record> data;
     
     public static List<Record> Storing(String url) throws ParseException {
-    	List<Record> dati;
+    	//List<Record> dati;
     	Parser p = new Parser();
 		try {
 			URLConnection openConnection = new URL(url).openConnection();

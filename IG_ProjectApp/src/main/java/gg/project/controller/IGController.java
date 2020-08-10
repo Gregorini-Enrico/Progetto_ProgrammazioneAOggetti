@@ -19,8 +19,8 @@ public class IGController {
 	PrincipalService service;
 	
 	@RequestMapping(value = "/Record/data", method = RequestMethod.GET)	
-	public ResponseEntity<Object> getRecord(@RequestParam(name="token", defaultValue="therealborghez") String token) throws ParseException
+	public ResponseEntity<Object> getRecord(@RequestParam(name="token", defaultValue="IGQVJWRXJ4TG56UmtvSGQ2ZAng4WFN2NEtWUWdGdnZAuM2J5a0FMUVgybXRUYmNWZA0NKbnphZAmFNbXdHS0NSekt0dlpYU2l2RWpoODFwSVo1OFNXQkFEVmJWb0t0YnhyM2VxQmw3b2dBf") String token) throws ParseException
 	{
-		return new ResponseEntity<>(service.getFollower(UrlService.getUrl(token)), HttpStatus.OK);
+		return new ResponseEntity<>(service.getRecords(UrlService.getUrl(token)), HttpStatus.OK);
 	}
 }		                                

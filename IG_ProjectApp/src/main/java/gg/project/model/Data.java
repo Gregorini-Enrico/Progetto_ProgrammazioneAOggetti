@@ -19,7 +19,8 @@ public class Data {
 			for(HashMap<String,Object> hm : p.records)
 			{
 				r = new Record();
-				r.setData((String)hm.get("Data"));
+				r.setUsername((String)hm.get("username"));
+				r.setCaption((String)hm.get("caption"));
 				lr.add(r);				
 			}
 		return lr;

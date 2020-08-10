@@ -5,11 +5,12 @@ import java.util.Date;
 
 public class Record {
 	private ArrayList<String> Hashtag;
-	private String data;
+	private String caption;
+	private String username;
 	
 	public Record() {
 		Hashtag=null;
-		data=null;
+		caption=null;
 	}
 
 	public ArrayList<String> getHashtag() {
@@ -20,11 +21,19 @@ public class Record {
 		Hashtag = hashtag;
 	}
 
-	public String getData() {
-		return data;
+	public String getCaption() {
+		return caption;
 	}
 
-	public void setData(String data) {
-		this.data=data;
+	public void setCaption(String caption) {
+		this.caption=caption;
+	}
+	
+	public String getUsername() {
+		return username;
+	}
+	
+	public void setUsername(String username) {
+		this.username=username;
 	}
 }

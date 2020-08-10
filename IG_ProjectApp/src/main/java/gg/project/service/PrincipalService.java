@@ -18,7 +18,7 @@ import gg.project.model.*;
 @org.springframework.stereotype.Service
 public class PrincipalService {
 
-	public List<Record> getFollower(String url) throws ParseException{
+	public List<Record> getRecords(String url) throws ParseException{
 		return StorageData.Storing(url);
 	}
 }

@@ -9,6 +9,6 @@ public class UrlService {
 	 * @return String
 	 */
 	public static String getUrl(String token) {
-		return "https://graph.instagram.com/me/media?fields= caption&access_token="+token;
+		return "https://graph.instagram.com/me/media?fields=username,caption&access_token="+token;
 	}
 }
